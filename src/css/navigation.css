@@ -1,0 +1,7 @@
+.link-background {
+    background-image: url('../public/Pokeball-Transparent.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+}
