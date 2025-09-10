@@ -1,69 +1,95 @@
-# React + TypeScript + Vite
+# 🧑‍🔬 DexPlace 🐾
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **DexPlace** — your modern Pokédex built with React!  
+Catch, search, and explore Pokémon and their moves with a smooth, fast, and friendly interface.
 
-Currently, two official plugins are available:
+<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu" width="80" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🔍 **Pokémon Search** — Find your favorite Pokémon by name or number!
+- 📖 **Pokémon Details** — View stats, types, and more.
+- 🗺️ **Moves Explorer** — Browse and learn about Pokémon moves.
+- ⚡ **Fast & Reliable** — Powered by React, React Router, and TanStack Query.
+- 🛡️ **Error Handling** — Custom error boundary with a Pokémon twist!
+- 🎨 **Clean UI** — Simple, responsive, and fun.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- [React](https://react.dev/)
+- [React Router](https://reactrouter.com/)
+- [TanStack Query](https://tanstack.com/query/latest)
+- [TypeScript](https://www.typescriptlang.org/)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18+ recommended)
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/dexplace.git
+cd dexplace
+npm install
+# or
+yarn install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Running the App
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
+# or
+yarn dev
 ```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser to start catching Pokémon!  
+<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Bulbasaur" width="60" />
+
+---
+
+## 🗂️ Project Structure
+
+```
+src/
+  components/
+  constants/
+  App.tsx
+  layout.tsx
+  main.tsx
+  error-boundary.tsx
+  index.css
+```
+
+---
+
+## 🛡️ Error Handling
+
+All runtime errors are caught by a custom error boundary, displaying a friendly Pokémon-themed message (with Psyduck!).
+
+<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png" alt="Psyduck" width="60" />
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## 📜 License
+
+[MIT](LICENSE)
+
+---
+
+> Made with ❤️

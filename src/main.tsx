@@ -10,6 +10,7 @@ import { MovesGrid } from './components/moves/moves-grid.tsx'
 import App from './App.tsx'
 import './index.css'
 import { MoveDetail } from './components/moves/movesDetail/index.tsx'
+import { ErrorBoundary } from './error-boundary.tsx'
 
 const router = createBrowserRouter([
   {
@@ -51,8 +52,10 @@ const queryClient = new QueryClient({
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />
-    </QueryClientProvider>
+    <ErrorBoundary>
+      <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>
+    </ErrorBoundary>
   </StrictMode>
 )

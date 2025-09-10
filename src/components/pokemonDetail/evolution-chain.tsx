@@ -6,7 +6,7 @@ import { useEvolutionChain } from '@/hooks/useEvolutionChain'
 export const EvolutionChain = ({ id }: { id: number }) => {
   const { data, error, isLoading } = useEvolutionChain({ id })
 
-  if (error || data?.includes(null)) return
+  if (error) return
 
   if (isLoading) {
     return <Spinner />
