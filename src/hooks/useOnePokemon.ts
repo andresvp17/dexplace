@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 import { getPokemonByName } from '@/services/get-pokemon'
-import { type Pokemon } from '@/types'
+import { type Pokemon } from '@/types/index.d'
 
 export const useOnePokemon = ({ name }: { name: string | undefined }) => {
   const { isFetching, isPending, error, data } = useQuery({

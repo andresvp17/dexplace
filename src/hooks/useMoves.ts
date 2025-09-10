@@ -2,7 +2,7 @@ import { getMoves, getMovesResult, getMoveByName } from '@/services/get-moves'
 import { useQuery } from '@tanstack/react-query'
 import { useState, useCallback } from 'react'
 import { getFromLocalStorage, setFromLocalStorage } from '@/utils/localStorage'
-import type { Move } from '@/types/moves'
+import type { Move } from '@/types/moves.d'
 
 export const useMoves = () => {
   const initialPage = getFromLocalStorage('movesPage') ?? 0

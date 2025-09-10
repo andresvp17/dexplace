@@ -4,8 +4,8 @@ import { formatMetadata } from '@/utils/fn'
 import { Spinner } from '@/components/ui/spinner'
 import { PokedexEntry } from './pokedex-entry'
 import { PokemonAbility } from './pokemon-ability'
-import { type PokeMetadata } from '@/types/pokemetadata'
-import type { Ability } from '@/types'
+import { type PokeMetadata } from '@/types/pokemetadata.d'
+import type { Ability } from '@/types/index.d'
 
 export const PokemonMetadata = ({
   id,

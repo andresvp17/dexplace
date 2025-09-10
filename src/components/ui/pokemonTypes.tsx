@@ -1,5 +1,5 @@
 import { TYPES_COLORS } from '@/constants/constants'
-import { type Type } from '@/types'
+import { type Type } from '@/types/index.d'
 
 type Props = {
   types: Type[]

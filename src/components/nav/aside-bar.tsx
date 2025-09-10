@@ -1,9 +1,9 @@
 import { LINKS } from '@/constants/constants'
 import { NavLink } from '@components/nav/nav-link'
 import { Close } from '../ui/icons'
-import '@/css/navigation.css'
 import { useVisible } from '@/store'
 import { Link } from 'react-router'
+import '@/css/navigation.css'
 
 export const AsideBar = () => {
   const visible = useVisible((state) => state.visible)

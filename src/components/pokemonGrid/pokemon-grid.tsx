@@ -3,7 +3,7 @@ import { Button } from '@components/buttons/button'
 import { memo } from 'react'
 import { Spinner } from '../ui/spinner'
 import { usePokemonList } from '@/hooks/usePokemonList'
-import type { Pokemon } from '@/types'
+import type { Pokemon } from '@/types/index.d'
 
 const PokemonGridComponent = () => {
   const {

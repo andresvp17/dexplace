@@ -1,9 +1,9 @@
 import { useSearch } from '@/hooks/useSearch'
 import { PokemonCard } from '../pokemonGrid/pokemon-card'
 import { MoveCard } from '@components/moves/move-card'
-import { type Pokemon } from '@/types'
+import { type Pokemon } from '@/types/index.d'
 import { Form } from '../ui/form'
-import type { Move } from '@/types/moves'
+import type { Move } from '@/types/moves.d'
 
 const isPokemon = (data: unknown): boolean =>
   data != null && typeof data === 'object' && 'sprites' in data

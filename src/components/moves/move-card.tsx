@@ -1,4 +1,4 @@
-import { type Move } from '@/types/moves'
+import { type Move } from '@/types/moves.d'
 import { MOVE_TYPE } from '@/constants/constants'
 import { TYPES_COLORS } from '@/constants/constants'
 import { Link } from 'react-router'

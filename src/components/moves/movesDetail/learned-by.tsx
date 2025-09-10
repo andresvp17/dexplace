@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import { type NamedAPIResource } from '@/types'
+import { type NamedAPIResource } from '@/types/index.d'
 import { useState, useMemo } from 'react'
 import { Button } from '@/components/buttons/button'
 

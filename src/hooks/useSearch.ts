@@ -2,8 +2,8 @@ import { useQuery } from '@tanstack/react-query'
 import { useSearchParams } from 'react-router'
 import { getPokemonByName } from '@/services/get-pokemon'
 import { getMoveByName } from '@/services/get-moves'
-import type { Move } from '@/types/moves'
-import type { Pokemon } from '@/types'
+import type { Move } from '@/types/moves.d'
+import type { Pokemon } from '@/types/index.d'
 
 export const useSearch = () => {
   const [searchParams, setSearchParams] = useSearchParams()

@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import type { Pokemon } from '@/types'
+import type { Pokemon } from '@/types/index.d'
 import { formatData } from '@/utils/fn'
 import { Types } from '../ui/pokemonTypes'
 

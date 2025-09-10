@@ -1,5 +1,5 @@
 import { useMove } from '@/hooks/useMoves'
-import type { Move } from '@/types/moves'
+import type { Move } from '@/types/moves.d'
 import { useParams } from 'react-router'
 import { HeaderMoveDetail } from './header'
 import { MoveDetailBody } from './detail-body'

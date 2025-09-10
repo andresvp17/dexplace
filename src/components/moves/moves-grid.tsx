@@ -2,7 +2,7 @@ import { useMoves } from '@/hooks/useMoves'
 import { MoveCard } from './move-card'
 import { Spinner } from '../ui/spinner'
 import { Button } from '../buttons/button'
-import type { Move } from '@/types/moves'
+import type { Move } from '@/types/moves.d'
 
 export const MovesGrid = () => {
   const { data, isLoading, handlePageNext, handlePagePrevious, page } =

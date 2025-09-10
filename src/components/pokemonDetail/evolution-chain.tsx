@@ -1,4 +1,4 @@
-import type { Pokemon } from '@/types'
+import type { Pokemon } from '@/types/index.d'
 import { ListOfPokemon } from '../pokemonGrid/pokemon-list'
 import { Spinner } from '../ui/spinner'
 import { useEvolutionChain } from '@/hooks/useEvolutionChain'

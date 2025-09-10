@@ -5,7 +5,7 @@ import { Spinner } from '../ui/spinner'
 import { PokemonInfo } from './pokemon-info'
 import { EvolutionChain } from './evolution-chain'
 import { useOnePokemon } from '@/hooks/useOnePokemon'
-import type { Pokemon } from '@/types'
+import type { Pokemon } from '@/types/index.d'
 
 export const PokemonDetail = () => {
   const { name } = useParams<{ name: string }>()
